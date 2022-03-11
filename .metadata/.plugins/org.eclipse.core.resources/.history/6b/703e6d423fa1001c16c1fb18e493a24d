@@ -1,0 +1,33 @@
+package br.com.gft.model;
+
+import java.util.List;
+import java.util.Random;
+
+public class Guerreiro extends Personagem {
+	private static List<String> habilidade;
+
+	public List<String> getHabilidade() {
+		return habilidade;
+	}
+
+	public void setHabilidade(List<String> habilidade) {
+		this.habilidade = habilidade;
+	}
+	
+	
+	public void lvlUp() {
+		setVida(getVida()+1);
+		setForca(getForca()+1);
+	}
+	
+	public void attack() {
+		Random aleatorio = new Random();
+		int numeroAleatorio = aleatorio.nextInt(300);
+		int ataque = (getForca()*getLevel()+numeroAleatorio);
+	}
+	
+	public void aprenderHabilidade(String habilidade) {
+		this.habilidade.add(habilidade);
+	}
+
+}

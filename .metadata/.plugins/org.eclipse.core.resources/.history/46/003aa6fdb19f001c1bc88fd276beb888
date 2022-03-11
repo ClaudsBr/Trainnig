@@ -1,0 +1,16 @@
+package Exercicio01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo v1 = new Veiculo();
+		v1.cor = "Azul";
+		v1.marca = "Fiat";
+		System.out.println(v1.cor);
+		System.out.println(v1.marca);
+		v1.ligar();
+		System.out.println(v1.isLigado());
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package br.com.gft.main;
+
+import br.com.gft.model.Veiculo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo v1 = new Veiculo("Fiat","Argo", "PGH5J78", "Cinza", 1988, false, 0, 21, 48500 );
+		
+		
+		
+		System.out.println("Testando o metodo acelerar");
+		System.out.println(v1.getVelocidade()+"km/h");
+		v1.acelerar();
+		System.out.println(v1.getVelocidade()+" km/h");
+		
+		System.out.println("Ligando o carro e setando a velocidade em 10 km/h");
+		v1.ligar();
+		v1.setVelocidade(10);
+		
+		System.out.println(v1.getVelocidade()+" km/h");
+		v1.acelerar();
+		System.out.println(v1.getVelocidade()+" km/h");
+		
+		System.out.println("Testando o metodo abastecer");
+		System.out.println(v1.getLitrosCombustivel()+" litros");
+		v1.abastecer(33);
+		System.out.println(v1.getLitrosCombustivel()+" litros");
+		
+		System.out.println("Testando o metodo frear");
+		System.out.println("velocidade atual "+v1.getVelocidade()+" km/h");
+		v1.frear();
+		System.out.println("velocidade atual "+v1.getVelocidade()+" km/h");
+	}
+
+}

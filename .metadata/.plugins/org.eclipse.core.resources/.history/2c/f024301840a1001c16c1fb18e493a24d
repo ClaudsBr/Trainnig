@@ -1,0 +1,27 @@
+package br.com.gft.main;
+
+import br.com.gft.model.Guerreiro;
+import br.com.gft.model.Mago;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Mago gandalf = new Mago("Gandalf", 1000, 800, 135, 900, 25, 92);
+		Guerreiro aragorn = new Guerreiro("Aragorn", 700, 100, 127, 750, 80,77);
+		
+		gandalf.lvlUp();
+		System.out.println(gandalf.getLevel());
+		System.out.println(gandalf.getMana());
+		System.out.println(gandalf.getInteligencia());
+		
+		aragorn.lvlUp();
+		System.out.println(aragorn.getLevel());
+		System.out.println(aragorn.getForca());
+		System.out.println(aragorn.getVida());
+		
+		gandalf.attack();
+
+	}
+
+}

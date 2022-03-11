@@ -1,0 +1,22 @@
+package br.com.gft.model;
+
+public class Lista<Pessoa> {
+	private Pessoa[] elemento;
+	private int tamanho;
+	
+	
+	/*public Lista(int capacidade){
+		this.elemento = (Pessoa[]) new Object[capacidade];
+		this.tamanho =0;
+	}*/
+	
+	public void adicionarElemento(Pessoa elemento) {
+		this.elemento[this.tamanho] = elemento;
+		this.tamanho++;		
+	}
+	
+	public int tamanho() {
+		return this.tamanho;
+	}
+	
+}

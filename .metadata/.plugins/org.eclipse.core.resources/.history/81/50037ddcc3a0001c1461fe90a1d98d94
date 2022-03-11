@@ -1,0 +1,18 @@
+package br.com.gft.model;
+
+public int MaiorIdade() {
+	int maior = 0;
+       
+    for(int i = 0;i< lista.size(); i++)
+    {  
+    	Pessoa pessoa = (Pessoa) lista.get(i);
+            
+            if(pessoa.getIdade() > maior)
+            {           
+            maior = pessoa.getIdade();  
+            }  
+     } 
+ 
+    return maior;  
+   }
+}

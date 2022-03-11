@@ -1,0 +1,37 @@
+package br.com.gft.model;
+
+import java.util.Arrays;
+
+public class Lista<Pessoa> {
+	private Pessoa[] elemento;
+	private int tamanho;
+	
+	
+	public Lista(int capacidade){
+		this.elemento = (Pessoa[]) new Object[capacidade];
+		this.tamanho =0;
+	}
+	
+	public void adicionarElemento(Pessoa elemento) {
+		this.elemento[this.tamanho] = elemento;
+		this.tamanho++;		
+	}
+	
+	public int tamanho() {
+		return this.tamanho;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder s = new StringBuilder();
+		
+		
+		for(int i=0; i<this.tamanho-1;i++) {
+			s.append(this.elemento[i]);
+			s.append(", ");
+			
+		}
+		return s.toString();
+	}
+	
+}

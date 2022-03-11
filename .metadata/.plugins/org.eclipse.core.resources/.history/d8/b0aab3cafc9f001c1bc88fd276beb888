@@ -1,0 +1,52 @@
+package Exercicio01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo v1 = new Veiculo();
+		v1.cor = "Azul";
+		v1.marca = "Fiat";
+		System.out.println(v1.cor);
+		System.out.println(v1.marca);
+		v1.ligar();
+		
+		Veiculo v2 = new Veiculo("Fiat","Argo", "PGH5J78", "Cinza", 1988, false, 12, 0, 48500 );
+		
+		v2.ligar();
+		System.out.println(v2.isLigado());
+		System.out.println(v2.velocidade);
+		System.out.println();
+		v2.acelerar();
+		System.out.println(v2.velocidade);
+		v2.acelerar();
+		System.out.println(v2.velocidade);
+		v2.desligar();
+		System.out.println();
+		v2.frear();
+		System.out.println(v2.velocidade);
+
+		v2.frear();
+		System.out.println(v2.velocidade);
+		v2.frear();
+		System.out.println(v2.velocidade);
+		
+		System.out.println(v2.litrosCombustivel);
+		v2.abastecer(58);
+		System.out.println(v2.litrosCombustivel);
+		
+		v2.abastecer(10);
+		System.out.println(v2.litrosCombustivel);
+		
+		System.out.println(v2.cor);
+		v2.pintar("vermelho");
+		System.out.println(v2.cor);
+		
+		System.out.println(v2.isLigado());
+		v2.desligar();
+		System.out.println(v2.isLigado());
+		v2.desligar();
+		System.out.println(v2.isLigado());
+	}
+	
+
+}

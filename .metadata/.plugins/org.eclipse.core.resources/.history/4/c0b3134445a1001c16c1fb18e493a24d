@@ -1,0 +1,8 @@
+package br.com.gft.model;
+
+public class Gerente extends Funcionario {
+	
+	public double bonificacao() {
+		return getSalario()+10000;
+	}
+}

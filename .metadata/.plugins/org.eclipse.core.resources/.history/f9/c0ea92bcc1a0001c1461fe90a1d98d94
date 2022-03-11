@@ -1,0 +1,10 @@
+package br.com.gft.model;
+
+public class ComparadorIdades {
+	private static final Comparator<Pessoa> MENOR_IDADE = new Comparator<Pessoa>() {
+		
+		public int compare(Pessoa p1, Pessoa p2) { 
+			return p1.idade - p2.idade; }  
+		
+	};
+}

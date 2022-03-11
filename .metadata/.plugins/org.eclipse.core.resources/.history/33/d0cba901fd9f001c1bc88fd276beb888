@@ -1,0 +1,17 @@
+package br.com.gft.main;
+
+import br.com.gft.model.Veiculo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo v1 = new Veiculo("Fiat","Argo", "PGH5J78", "Cinza", 1988, false, 12, 0, 48500 );
+		
+		System.out.println("Testando o metodo acelerar");
+		v1.acelerar();
+		System.out.println();
+		
+
+	}
+
+}

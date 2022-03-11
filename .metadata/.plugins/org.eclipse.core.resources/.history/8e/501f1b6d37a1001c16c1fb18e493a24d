@@ -1,0 +1,36 @@
+package br.com.gft.model;
+
+import java.util.ArrayList;
+
+public class Lista {
+	private static ArrayList<Pessoa> lista = new ArrayList<>();
+	
+	
+	public static ArrayList<Pessoa> getLista() {
+		return lista;
+	}
+
+	public static void adicionar(Pessoa pessoa) {
+		lista.add(pessoa);
+	}
+	
+	public static String listarPessoas() {
+		String saida = "";
+		System.out.println("|Aa Nome|# Idade|");
+		for(Pessoa p: lista) {
+			saida += " "+p.getNome()+"     "+p.getIdade()+"\n";
+		}
+		return saida;
+	}
+	
+	public static void pesquisarNome(String nome) {
+		for(Pessoa p: lista) {
+			if(p.getNome().equalsIgnoreCase(nome)) {
+				System.out.println("O nome "+nome+" está na lista");
+			}else {
+				System.out.println("O nome "+nome+" NÃO está na lista");
+			}
+		}
+				
+	}
+}

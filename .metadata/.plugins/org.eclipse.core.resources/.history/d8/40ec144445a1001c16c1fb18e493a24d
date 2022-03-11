@@ -1,0 +1,8 @@
+package br.com.gft.model;
+
+public class Vendedor extends Funcionario {
+	
+	public double bonificacao() {
+		return getSalario()+3000;
+	}
+}
